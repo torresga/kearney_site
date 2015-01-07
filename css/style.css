@@ -1,0 +1,225 @@
+/* UNIVERSAL STYLES */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+   color: #333;
+}
+
+img { 
+  max-width: 55%;
+  height: auto; 
+}
+
+h1 { 
+  background-color: white; 
+  color: #009e60;
+}
+
+ul li { 
+  list-style-type: none;
+  display: inline-block;
+}
+
+a { 
+  text-decoration: none; 
+}
+
+/* HEADER AND FOOTER */
+
+header, footer { 
+  background-color: #009e60;
+  color: white;
+  font-size: 110%;
+}
+
+footer {
+  font-size: 80%; 
+  text-align: center;
+  clear: both;
+}
+
+header p, h1 {
+  font-family: 'Times New Roman', serif;
+}
+
+#firstname {
+  font-family: 'Times New Roman', serif;
+  font-size: 60%;
+}
+
+#lastname {
+  font-family: 'Times New Roman', serif;
+  text-transform: uppercase;
+} 
+
+#pre-tagline { font-style: italic; font-weight: bold; }
+
+#tagline { text-transform: uppercase; font-weight: bold; }
+
+#photo {
+  background-image: url('../img/New_year_campaign006.jpg');
+  height: 0;
+  padding: 0; /* remove any pre-existing padding, just in case */
+  padding-bottom: 27%; /* not sure what the aspect ratio is, but this is perfect size */
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#photo blockquote {
+  margin-top: 5%;
+  font-size: 110%;
+  width: 40%;
+  float: right;
+}
+
+/* NAV */
+
+nav {
+  border-bottom: 3px solid #009e60;
+  border-top: 3px solid #009e60; 
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav li { 
+  padding: 0.50%;
+  margin: 0 10% 0 10%; 
+}
+
+nav li a { 
+  color: #009e60;
+  font-weight: bold;
+}
+
+#secondary { 
+  border-bottom: none;
+  font-size: 70%;
+}
+
+#secondary li { 
+  margin: 0%;
+  width: 5%;
+  float: right;
+  border-right: 1px dotted white;
+}
+
+#secondary li a {
+  color: white;
+}
+
+/* SECTION */
+
+main, aside {
+  padding: 1%;
+  text-align: center;
+}
+
+main h2, h3 {
+  color: #009e60;
+  text-decoration: underline;
+}
+
+main p {
+  padding: 1%;
+}
+
+aside p { 
+  margin-top: 1%;
+  margin-bottom: 3%;
+  font-size: 90%; 
+}  
+
+#title, aside h2 {
+  font-size: 200%;
+  color: #009e60;
+  font-weight: bold;
+}
+
+aside h2 {
+  font-size: 320%;
+  text-transform: uppercase;
+}
+
+#events, #news {
+  margin-top: 3%;
+  margin-bottom: 3%; 
+}
+
+#endorsements li { 
+  display: inline;
+  padding-right: 1%; 
+}
+
+#subscribe {
+  width: 50%;
+  border: 2px solid #009e60;
+  margin: 0 auto;
+}
+
+
+/* IFRAMES */
+
+#youtube-player, #facebook {
+  text-align: center;
+}
+
+#youtube-player {
+  margin-bottom: 3%;
+}
+
+#facebook { 
+  margin-top: 3%;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 795px) {
+  /* this is for the nav */
+}
+
+@media (min-width: 700px) {
+
+  main {
+    text-align: left;
+  }
+
+  #events {
+    width: 50%; 
+    float: left;
+  }
+
+  #news { 
+    width: 50%;
+    float: right;
+  }
+
+  #endorsements { clear: both; }
+}
+
+@media (min-width: 950px) {
+
+  main {
+    width: 60%;
+    float: left;
+  }
+
+  aside { 
+    width: 40%;
+    float: right;
+  }
+}
